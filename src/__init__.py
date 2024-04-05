@@ -1,6 +1,4 @@
-class DotDict:
-    from __future__ import annotations
-
+from __future__ import annotations
 
 from typing import Union
 
@@ -47,12 +45,3 @@ class DotDict(dict):
 
     __setattr__ = dict.__setitem__
     __delattr__ = dict.__delitem__
-
-
-example = {
-    "A": {"B": 1, "C": 2},
-    "D": [[{"E": 3, "F": [{"A": 10, "B": 11}, "X", (1), {"Y": "z"}]}], {1234}],
-}
-
-mydict = DotDict(example)
-print(mydict)
