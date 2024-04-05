@@ -1,6 +1,6 @@
 from pytest import fixture
 
-from src import DotDict
+from dotdict import DotDict
 
 
 @fixture
