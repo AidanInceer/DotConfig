@@ -1,24 +1,47 @@
-[build-system]
-requires = ["setuptools >= 65.5.0"]
-build-backend = "setuptools.build_meta"
+# [project]
+# name = "dot_dict"
+# requires-python = ">= 3.11"
 
-[project]
-dynamic = ["version"]
-name = "dot-dict"
-requires-python = ">= 3.11"
+# authors = [{ name = "Aidan Inceer", email = "aidaninceer0@gmail.com" }]
 
-authors = [{ name = "Aidan Inceer", email = "aidaninceer0@gmail.com" }]
+# description = "A simple package which converts a standard python dictionary to a dot accessible object."
+# readme = "README.md"
+# license = { file = "LICENSE" }
 
+# keywords = ["dot", "dict"]
+
+# classifiers = [
+#     "Development Status :: 3 - Alpha",
+#     "Intended Audience :: Developers",
+# ]
+
+# [project.urls]
+# Repository = "https://github.com/AidanInceer/DotDict"
+
+
+[tool.commitizen]
+version = "0.1.0"
+version_files = ["README.md", "pyproject.toml:version", "setup.py"]
+name = "cz_conventional_commits"
+tag_format = "$major.$minor.$patch"
+version_scheme = "semver"
+version_provider = "poetry"
+update_changelog_on_bump = true
+changelog_incremental = true
+
+[tool.poetry]
+name = "dot_notation_dict"
+version = "0.1.0"
 description = "A simple package which converts a standard python dictionary to a dot accessible object."
+authors = ["AidanInceer <aidaninceer0@gmail.com>"]
+license = "LICENCE"
 readme = "README.md"
-license = { file = "LICENSE" }
 
-keywords = ["dot", "dict"]
+[tool.poetry.dependencies]
+python = "^3.11"
+pre-commit = "^3.7.0"
 
-classifiers = [
-    "Development Status :: 3 - Alpha",
-    "Intended Audience :: Developers",
-]
 
-[project.urls]
-Repository = "https://github.com/AidanInceer/DotDict"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

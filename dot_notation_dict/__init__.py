@@ -3,9 +3,7 @@ from __future__ import annotations
 
 class DotDict:
     def __init__(self, d: dict):
-
         for key, value in d.items():
-
             if isinstance(value, dict):
                 setattr(self, key, DotDict(value))
             elif isinstance(value, list):
