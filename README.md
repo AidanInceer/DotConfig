@@ -1,11 +1,15 @@
 # DotDict
 
+<a href="https://github.com/AidanInceer/DotDict">
+    <img alt="Static Badge" src="https://img.shields.io/badge/version-0.1.0-blue">
+</a>
+
 A simple package which converts a standard python dictionary to a dot accessible object.
 
 ## Installation
 
 ``` bash
-pip install dot-dict
+pip install dot_notation_dict
 ```
 
 ## Usage
