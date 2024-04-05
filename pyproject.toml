@@ -20,7 +20,7 @@
 
 
 [tool.commitizen]
-version = "0.1.0"
+version = "0.2.0"
 version_files = ["README.md", "pyproject.toml:version", "setup.py"]
 name = "cz_conventional_commits"
 tag_format = "$major.$minor.$patch"
@@ -31,7 +31,7 @@ changelog_incremental = true
 
 [tool.poetry]
 name = "dot_notation_dict"
-version = "0.1.0"
+version = "0.2.0"
 description = "A simple package which converts a standard python dictionary to a dot accessible object."
 authors = ["AidanInceer <aidaninceer0@gmail.com>"]
 license = "LICENCE"
