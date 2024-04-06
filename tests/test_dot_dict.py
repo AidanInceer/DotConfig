@@ -1,6 +1,6 @@
 from pytest import fixture
 
-from dot_notation_dict import DotDict
+from dotcon import DotConfig
 
 
 @fixture
@@ -9,7 +9,7 @@ def test_dict() -> dict:
 
 
 def test_dot_dict_00(test_dict: dict):
-    ddict = DotDict(test_dict)
+    ddict = DotConfig(test_dict)
     expected = test_dict["A"]
     actual = ddict.A
 
@@ -17,7 +17,7 @@ def test_dot_dict_00(test_dict: dict):
 
 
 def test_dot_dict_01(test_dict: dict):
-    ddict = DotDict(test_dict)
+    ddict = DotConfig(test_dict)
     expected = test_dict["B"]
     actual = ddict.B
 
@@ -25,7 +25,7 @@ def test_dot_dict_01(test_dict: dict):
 
 
 def test_dot_dict_02(test_dict: dict):
-    ddict = DotDict(test_dict)
+    ddict = DotConfig(test_dict)
     expected = test_dict["F"]
     actual = ddict.F
 
@@ -33,14 +33,14 @@ def test_dot_dict_02(test_dict: dict):
 
 
 def test_dot_dict_03(test_dict: dict):
-    ddict = DotDict(test_dict)
+    ddict = DotConfig(test_dict)
     ddict.F = "Hello World"
 
     assert ddict.F == "Hello World"
 
 
 def test_dot_dict_04():
-    ddict = DotDict({"A": 1})
+    ddict = DotConfig({"A": 1})
     actual = repr(ddict)
 
-    assert actual == "DotDict: {A: 1}"
+    assert actual == "DotConfig: {A: 1}"
