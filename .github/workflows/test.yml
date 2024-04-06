@@ -24,6 +24,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: Run Pytest
-        run: python -m pytest --cov=.  --cov-report=term
+        run: python -m pytest --cov=.
       - name: Mark as a success
         run: exit 0
