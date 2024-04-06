@@ -1,4 +1,4 @@
-# DotDict
+# DotConfig
 
 <a href="https://github.com/AidanInceer/DotDict">
     <img alt="Static Badge" src="https://img.shields.io/badge/version-0.2.0-blue">
@@ -9,13 +9,13 @@ A simple package which converts a standard python dictionary to a dot accessible
 ## Installation
 
 ``` bash
-pip install dot_notation_dict
+pip install dotcon
 ```
 
 ## Usage
 
 ``` python
-from dotdict import DotDict
+from dotcon import DotConfig
 
 mydict = {
     "A": [1, 2, 3, 4],
@@ -24,7 +24,7 @@ mydict = {
     "F": None,
 }
 
-ddict = DotDict(mydict)
+ddict = DotConfig(mydict)
 
 ddict.A
 >>> [1, 2, 3, 4]

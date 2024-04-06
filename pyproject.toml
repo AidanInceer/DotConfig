@@ -30,7 +30,7 @@ update_changelog_on_bump = true
 changelog_incremental = true
 
 [tool.poetry]
-name = "dot_notation_dict"
+name = "dotcon"
 version = "0.2.0"
 description = "A simple package which converts a standard python dictionary to a dot accessible object."
 authors = ["AidanInceer <aidaninceer0@gmail.com>"]
@@ -40,6 +40,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 pre-commit = "^3.7.0"
+pytest = "^8.1.1"
 
 
 [build-system]

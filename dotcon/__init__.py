@@ -1,17 +1,17 @@
 from __future__ import annotations
 
 
-class DotDict:
+class DotConfig:
     def __init__(self, d: dict):
         for key, value in d.items():
             if isinstance(value, dict):
-                setattr(self, key, DotDict(value))
+                setattr(self, key, DotConfig(value))
             elif isinstance(value, list):
                 setattr(
                     self,
                     key,
                     [
-                        DotDict(item) if isinstance(item, dict) else item
+                        DotConfig(item) if isinstance(item, dict) else item
                         for item in value
                     ],
                 )
