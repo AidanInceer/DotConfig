@@ -1,7 +1,7 @@
 # DotConfig
 
 <a href="https://github.com/AidanInceer/DotDict">
-    <img alt="Static Badge" src="https://img.shields.io/badge/version-0.2.0-blue">
+    <img alt="Static Badge" src="https://img.shields.io/badge/version-0.2.1-blue">
 </a>
 
 A simple package which converts a standard python dictionary to a dot accessible object.
