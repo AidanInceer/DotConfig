@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dotcon"
-version = "0.2.1"
+version = "0.3.0"
 description = "A simple package which converts a standard python dictionary to a dot accessible object."
 authors = ["AidanInceer <aidaninceer0@gmail.com>"]
 license = "LICENCE"
@@ -16,7 +16,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.commitizen]
-version = "0.2.1"
+version = "0.3.0"
 version_files = ["README.md", "pyproject.toml:version"]
 name = "cz_conventional_commits"
 tag_format = "$major.$minor.$patch"
