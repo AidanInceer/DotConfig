@@ -1,8 +1,11 @@
 name: Bump Version
 
 on:
-  push:
+  workflow_run:
+    workflows: ["Build"]
     branches: ["main"]
+    types:
+      - completed
 
 jobs:
   bump-version:

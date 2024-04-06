@@ -1,0 +1,17 @@
+name: Publish
+
+on:
+  workflow_run:
+    workflows: ["Bump Version"]
+    branches: ["main"]
+    types:
+      - completed
+
+jobs:
+  Publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build and publish to PyPi
+        uses: JRubics/poetry-publish@v2.0
+        with:
+          pypi_token: ${{ secrets.PYPI_TOKEN }}
