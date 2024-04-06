@@ -14,3 +14,10 @@ repos:
     rev: 22.10.0
     hooks:
     -   id: black
+-   repo: local
+    hooks:
+    -   id: poetry-export
+        name: poetry-export
+        entry: bash -c 'poetry export --without-hashes --format=requirements.txt > requirements.txt'
+        language: system
+        types: [text]
