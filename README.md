@@ -4,7 +4,7 @@
     <img alt="Static Badge" src="https://img.shields.io/badge/version-0.2.1-blue">
 </a>
 
-A simple package which converts a standard python dictionary to a dot accessible object.
+A simple package which converts a standard python dictionary to a dot accessible configuration object.
 
 ## Installation
 
