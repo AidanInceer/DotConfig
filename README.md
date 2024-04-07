@@ -29,6 +29,11 @@ ddict = DotConfig(mydict)
 ddict.A
 >>> [1, 2, 3, 4]
 
+# Or the regular way
+
+ddict['A']
+>>> [1, 2, 3, 4]
+
 ddict.B
 >>> {"C": 5}
 
