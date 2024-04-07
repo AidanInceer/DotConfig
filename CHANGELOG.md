@@ -1,3 +1,9 @@
+## 0.4.0 (2024-04-07)
+
+### Feat
+
+- add dictionary compatibility
+
 ## 0.3.0 (2024-04-06)
 
 ### Feat
