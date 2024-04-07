@@ -44,3 +44,37 @@ def test_dot_dict_04():
     actual = repr(ddict)
 
     assert actual == "DotConfig: {A: 1}"
+
+
+def test_dot_dict_05():
+    ddict = DotConfig({"A": [1, 2, 3]})
+
+    actual = ddict.to_dict()
+
+    assert {"A": [1, 2, 3]} == actual
+
+
+def test_dot_dict_06():
+    ddict = DotConfig({".A": [1, 2, 3]})
+
+    actual = ddict[".A"]
+
+    assert [1, 2, 3] == actual
+
+
+def test_dot_dict_07():
+    ddict = DotConfig({"A": [1, 2, 3], "B": [4, 5, 6]})
+
+    ddict.pop("A")
+
+    actual = ddict.to_dict()
+
+    assert {"B": [4, 5, 6]} == actual
+
+
+def test_dot_dict_08():
+    ddict = DotConfig({"A": [1, 2, 3], "B": [4, 5, 6]})
+
+    actual = ddict.keys()
+
+    assert ["A", "B"] == actual

@@ -1,6 +1,6 @@
 # DotConfig
 
-<a href="https://github.com/AidanInceer/DotDict">
+<a href="https://github.com/AidanInceer/DotConfig">
     <img alt="Static Badge" src="https://img.shields.io/badge/version-0.3.0-blue">
 </a>
 
