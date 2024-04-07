@@ -1,7 +1,7 @@
 # DotConfig
 
 <a href="https://github.com/AidanInceer/DotConfig">
-    <img alt="Static Badge" src="https://img.shields.io/badge/version-0.5.0-blue">
+    <img alt="Static Badge" src="https://img.shields.io/badge/version-0.5.1-blue">
 </a>
 
 A simple package which converts a standard python dictionary to a dot accessible configuration object.
