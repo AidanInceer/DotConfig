@@ -71,3 +71,6 @@ class DotConfig:
 
     def keys(self):
         return list(self.__dict__.keys())
+
+    def items(self):
+        return self.__dict__.items()

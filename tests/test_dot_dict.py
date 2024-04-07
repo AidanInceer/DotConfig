@@ -78,3 +78,10 @@ def test_dot_dict_08():
     actual = ddict.keys()
 
     assert ["A", "B"] == actual
+
+
+def test_dot_dict_09():
+    ddict = DotConfig({"A": [1, 2, 3], "B": [4, 5, 6]})
+    actual = [(k, v) for k, v in ddict.items()]
+
+    assert [("A", [1, 2, 3]), ("B", [4, 5, 6])] == actual
